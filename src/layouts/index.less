@@ -1,0 +1,119 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  height: 64px;
+  line-height: 64px;
+}
+
+.content {
+  height: calc(100vh - 64px);
+
+  :global {
+    .ant-page-header-ghost {
+      padding: 0;
+    }
+  }
+}
+
+.avatar {
+  float: right;
+
+  .font {
+    color: @primaryColor;
+    margin: 0 5px;
+  }
+}
+
+.scaleBox {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.scaleBlock {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5%;
+  background: #1B4771;
+  border: solid 1px #1F4978;
+  color: #136CBB;
+  border-radius: 16px 0 16px 0;
+  text-align: center;
+  // letter-spacing: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  line-height: 2;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.scaleBlockChk {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5%;
+  border-radius: 16px 0 16px 0;
+  text-align: center;
+  // letter-spacing: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  line-height: 2;
+  font-size: 16px;
+  background: #132E83;
+  border: solid 1px #2483FF;
+  color: #1E8AE9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.scaleBlock:hover {
+  color: #1E8AE9;
+  font-weight: bold;
+}
+
+.siderTitle {
+  color: #5DB5FF;
+  padding-left: 8px;
+  border: solid 4px #5DB5FF;
+  border-width: 0 0 0 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.thumbnailBox {
+  overflow: auto;
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.thumbnailBlock {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 3px;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.thumbnailBlockChk {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 3px;
+  border: solid 1px #2483FF;
+  cursor: pointer;
+}
+
+.thumbnailBlock:hover {
+  border: solid 1px #1B4771;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.blockName {
+  color: #5DB5FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
